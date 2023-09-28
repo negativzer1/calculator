@@ -13,7 +13,7 @@ namespace calculator
             calculator();
         }
 
-        static void calculator()
+         static void calculator()
         {
             char operation;
             double number1;
@@ -40,7 +40,7 @@ namespace calculator
                     break;
             }
         }
-        private double inputnumber1(out double cnumber1)
+        private static double inputnumber1(out double cnumber1)
         {
             Console.WriteLine("Введите первое число");
             string snumber1 = Console.ReadLine();
@@ -56,7 +56,7 @@ namespace calculator
             }
 
         }
-        private double inputnumber2(out double cnumber2)
+        private static double inputnumber2(out double cnumber2)
         {
             Console.WriteLine("Введите второе число");
             string snumber2 = Console.ReadLine();
@@ -72,7 +72,7 @@ namespace calculator
             }
 
         }
-        private char inputoperation(out char coperation)
+        private static  char inputoperation(out char coperation)
         {
             Console.WriteLine("Введите операцию, допустимые операции + - / *");
             string snumber2 = Console.ReadLine();
