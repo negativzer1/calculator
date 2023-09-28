@@ -36,13 +36,13 @@ namespace calculator
                     Console.WriteLine(number1 / number2);
                     break;
                 default:
-                    Console.WriteLine("операция неопределена");
+                    Console.WriteLine("Операция не определена");
                     break;
             }
         }
-        private static double inputnumber1(out double cnumber1)
+        private double inputnumber1(out double cnumber1)
         {
-            Console.WriteLine("введите первое число");
+            Console.WriteLine("Введите первое число");
             string snumber1 = Console.ReadLine();
             if (double.TryParse(snumber1, out cnumber1))
             {
@@ -50,15 +50,15 @@ namespace calculator
             }
             else
             {
-                Console.WriteLine("Ошибка попробуйте снова");
+                Console.WriteLine("Ошибка, попробуйте снова");
                 inputnumber1(out cnumber1);
                 return cnumber1;
             }
 
         }
-        private static double inputnumber2(out double cnumber2)
+        private double inputnumber2(out double cnumber2)
         {
-            Console.WriteLine("введите второе число");
+            Console.WriteLine("Введите второе число");
             string snumber2 = Console.ReadLine();
             if (double.TryParse(snumber2, out cnumber2))
             {
@@ -66,13 +66,13 @@ namespace calculator
             }
             else
             {
-                Console.WriteLine("Ошибка попробуйте снова");
+                Console.WriteLine("Ошибка, попробуйте снова");
                 inputnumber2(out cnumber2);
                 return cnumber2;
             }
 
         }
-        private static char inputoperation(out char coperation)
+        private char inputoperation(out char coperation)
         {
             Console.WriteLine("Введите операцию, допустимые операции + - / *");
             string snumber2 = Console.ReadLine();
@@ -82,14 +82,14 @@ namespace calculator
                     return coperation;
                 else
                 {
-                    Console.WriteLine("Ошибка попробуйте снова");
+                    Console.WriteLine("Ошибка, попробуйте снова");
                     inputoperation(out coperation);
                 }
             }
 
             else
             {
-                Console.WriteLine("Ошибка попробуйте снова");
+                Console.WriteLine("Ошибка, попробуйте снова");
                 inputoperation(out coperation);
                 return coperation;
             }
